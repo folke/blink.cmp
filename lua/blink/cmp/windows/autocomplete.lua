@@ -144,6 +144,8 @@ function autocomplete.open_with_items(context, items)
   autocomplete.win:open()
 
   autocomplete.update_position(context)
+  if not autocomplete.win:is_open() then return end
+
   autocomplete.set_has_selected(autocmp_config.selection == 'preselect')
 
   -- todo: some logic to maintain the selection if the user moved the cursor?
