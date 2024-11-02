@@ -25,7 +25,7 @@
 ---
 --- @field setup fun(): blink.cmp.CompletionWindow
 ---
---- @field open_with_items fun(context: blink.cmp.CompletionRenderContext, items: blink.cmp.CompletionItem[])
+--- @field open_with_items fun(context: blink.cmp.Context, items: blink.cmp.CompletionItem[])
 --- @field open fun()
 --- @field close fun()
 --- @field listen_on_open fun(callback: fun())
