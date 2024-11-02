@@ -227,7 +227,7 @@ function win:get_vertical_direction_and_height(direction_priority)
   local direction_priority_by_space = vim.fn.sort(vim.deepcopy(direction_priority), function(a, b)
     local distance_a = math.min(max_height, get_distance(a))
     local distance_b = math.min(max_height, get_distance(b))
-    return distance_a < distance_b and -1 or distance_a > distance_b and 1 or 0
+    return distance_a < distance_b and 1 or distance_a > distance_b and -1 or 0
   end)
 
   local direction = direction_priority_by_space[1]
